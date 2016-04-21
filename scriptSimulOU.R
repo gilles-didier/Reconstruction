@@ -1392,7 +1392,7 @@ for (j in 1:nSM)
 	}
 	if (aM[ia]>0)
 	{
-	simul <- rTraitCont2(arbre, model="OU", theta=bM[ib], alpha=aM[ia], sigma=sigmaM[j], ancestor=T,  root.value=z0)
+	simul <- rTraitCont(arbre, model="OU", theta=bM[ib], alpha=aM[ia], sigma=sigmaM[j], ancestor=T,  root.value=z0)
 	}
 
 	EtatTheo <- simul[(nT+1):(nN+nT)]
